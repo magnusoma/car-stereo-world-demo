@@ -20,3 +20,9 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+article {
+    border: 2px solid black;
+}
+</style>
