@@ -1,4 +1,4 @@
-<template v-if="componentSeriesIsInitialized">
+<template>
     <div v-if="componentSeriesIsInitialized">
         <component-series-info :componentSeries="componentSeries"
         />

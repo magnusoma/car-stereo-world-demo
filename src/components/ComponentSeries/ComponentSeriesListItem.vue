@@ -27,5 +27,6 @@ export default {
 <style scoped>
 article {
     border: 2px solid black;
+    margin-bottom: 1rem;
 }
 </style>

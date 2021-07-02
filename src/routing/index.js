@@ -3,6 +3,7 @@ import {createWebHistory, createRouter} from 'vue-router'
 import ComponentSeriesListView from '/src/views/ComponentSeriesListView.vue'
 import ComponentSeriesView from '/src/views/ComponentSeriesView.vue'
 import ComponentListView from '/src/views/ComponentListView.vue'
+import ComponentView from '/src/views/ComponentView.vue'
 /*import AdminArtistList from '/src/views/admin/AdminArtistList.vue'
 import AdminJobList from '/src/views/admin/AdminJobList.vue'
 import HomePageView from '/src/views/HomePageView.vue'
@@ -25,6 +26,11 @@ const routes = [
         name: "ComponentListView",
         path: "/component",
         component: ComponentListView
+    },
+    {
+        name: "ComponentView",
+        path: "/component/:id/",
+        component: ComponentView
     },
 ];
 
