@@ -2,6 +2,7 @@
     <nav>
         <ul>
             <li><router-link to="/component-series">Komponent Serier</router-link></li>
+            <li><router-link to="/component">Komponenter</router-link></li>
         </ul>
     </nav>
 </template>

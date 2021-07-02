@@ -2,6 +2,7 @@ import {createWebHistory, createRouter} from 'vue-router'
 
 import ComponentSeriesListView from '/src/views/ComponentSeriesListView.vue'
 import ComponentSeriesView from '/src/views/ComponentSeriesView.vue'
+import ComponentListView from '/src/views/ComponentListView.vue'
 /*import AdminArtistList from '/src/views/admin/AdminArtistList.vue'
 import AdminJobList from '/src/views/admin/AdminJobList.vue'
 import HomePageView from '/src/views/HomePageView.vue'
@@ -20,34 +21,11 @@ const routes = [
         path: "/component-series/:id/",
         component: ComponentSeriesView
     },
-    
-    /*{
-        name: "ArtistView",
-        path: "/info/:id/",
-        component: ArtistView
-    },
     {
-        name: "JobView",
-        path: "/mission",
-        component: JobView
+        name: "ComponentListView",
+        path: "/component",
+        component: ComponentListView
     },
-
-    {
-        name: "AdminArtistList",
-        path: "/admin",
-        component: AdminArtistList
-    },
-    
-    {
-        name: "AdminArtistInfo",
-        path: "/Admin/:id",
-        component: AdminArtistInfo
-    },
-    {
-        name: "AdminJobList",
-        path: "/admin/job",
-        component: AdminJobList
-    }*/
 ];
 
 const router = createRouter({
