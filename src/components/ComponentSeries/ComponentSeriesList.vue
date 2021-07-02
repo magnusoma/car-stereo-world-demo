@@ -1,8 +1,8 @@
 <template>
     <section>
         <component-series-list-item
-            v-for="(componentSeries, index) in componentSeriesList"
-            :key="index"
+            v-for="componentSeries in componentSeriesList"
+            :key="componentSeries.id"
 
             :componentSeries="componentSeries"
         />
@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import { reactive, ref } from '@vue/reactivity'
+import { ref } from '@vue/reactivity'
 import axios from 'axios'
 
 import ComponentSeriesListItem from './ComponentSeriesListItem.vue'
@@ -19,15 +19,8 @@ export default {
     name: 'ComponentSeriesList',
     setup() {
         let componentSeriesList = ref([]);
-        const cs = reactive({
-            name: "testName",
-            brandName: "brandTestName",
-            producedFrom: 2001,
-            producedUntil: 2010
-        });
 
         return {
-            cs,
             componentSeriesList
         }
     },
