@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import ComponentInfo from '../components/ComponentInfo.vue'
+import ComponentInfo from '../components/component/ComponentInfo.vue'
 
 import { reactive, ref } from 'vue'
 import { useRoute } from 'vue-router'

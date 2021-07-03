@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import ComponentListItem from '../components/ComponentListItem.vue'
+import ComponentListItem from '../components/component/ComponentListItem.vue'
 import ComponentSeriesInfo from '../components/ComponentSeries/ComponentSeriesInfo.vue'
 
 import { reactive, ref } from 'vue'
