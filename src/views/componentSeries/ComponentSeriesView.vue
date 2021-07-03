@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import ComponentListItem from '../components/component/ComponentListItem.vue'
-import ComponentSeriesInfo from '../components/ComponentSeries/ComponentSeriesInfo.vue'
+import ComponentListItem from '../../components/component/ComponentListItem.vue'
+import ComponentSeriesInfo from '../../components/ComponentSeries/ComponentSeriesInfo.vue'
 
 import { reactive, ref } from 'vue'
 import { useRoute } from 'vue-router'
@@ -36,7 +36,6 @@ export default {
             axios.get(`https://localhost:44353/api/componentseries/get-component-series-by-id/${useRoute().params.id}`)
                 .then( response => {
                     this.componentSeries = response.data;
-                    console.log(this.componentSeries);
                     this.componentSeriesIsInitialized = true;
                 })
         }

@@ -1,11 +1,14 @@
 import {createWebHistory, createRouter} from 'vue-router'
 
-import ComponentSeriesListView from '/src/views/ComponentSeriesListView.vue'
-import ComponentSeriesView from '/src/views/ComponentSeriesView.vue'
-import ComponentListView from '/src/views/ComponentListView.vue'
-import ComponentView from '/src/views/ComponentView.vue'
+import ComponentSeriesListView from '/src/views/componentSeries/ComponentSeriesListView.vue'
+import ComponentSeriesView from '/src/views/componentSeries/ComponentSeriesView.vue'
+
+import ComponentListView from '/src/views/component/ComponentListView.vue'
+import ComponentView from '/src/views/component/ComponentView.vue'
+
+import BrandListView from '/src/views/brand/BrandListView.vue'
+
 import AboutView from '/src/views/AboutView.vue'
-import BrandListView from '/src/views/BrandListView.vue'
 import LinksView from '/src/views/LinksView.vue'
 
 

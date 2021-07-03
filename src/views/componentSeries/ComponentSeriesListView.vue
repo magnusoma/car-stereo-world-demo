@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import ComponentSeriesList from '../components/ComponentSeries/ComponentSeriesList.vue'
+import ComponentSeriesList from '../../components/ComponentSeries/ComponentSeriesList.vue'
 export default {
     name: 'ComponentSeriesListView',
     setup() {

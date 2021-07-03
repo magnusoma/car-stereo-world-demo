@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import BrandList from '../components/brand/BrandList.vue'
+import BrandList from '../../components/brand/BrandList.vue'
 
 export default {
     name: 'BrandListView',

@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import ComponentList from '../components/component/ComponentList.vue'
+import ComponentList from '../../components/component/ComponentList.vue'
 export default {
     name: 'ComponentListView',
     setup() {

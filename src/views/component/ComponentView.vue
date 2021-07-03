@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import ComponentInfo from '../components/component/ComponentInfo.vue'
+import ComponentInfo from '../../components/component/ComponentInfo.vue'
 
 import { reactive, ref } from 'vue'
 import { useRoute } from 'vue-router'
@@ -27,7 +27,6 @@ export default {
             axios.get(`https://localhost:44353/api/components/get-component-by-id/${useRoute().params.id}`)
                 .then( response => {
                     this.component = response.data;
-                    console.log(this.component);
                     this.componentIsInitialized = true;
                 })
         }
