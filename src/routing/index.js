@@ -4,11 +4,9 @@ import ComponentSeriesListView from '/src/views/ComponentSeriesListView.vue'
 import ComponentSeriesView from '/src/views/ComponentSeriesView.vue'
 import ComponentListView from '/src/views/ComponentListView.vue'
 import ComponentView from '/src/views/ComponentView.vue'
-/*import AdminArtistList from '/src/views/admin/AdminArtistList.vue'
-import AdminJobList from '/src/views/admin/AdminJobList.vue'
-import HomePageView from '/src/views/HomePageView.vue'
-import ArtistView from '/src/views/ArtistView.vue'
-import JobView from '/src/views/JobView.vue'*/
+import AboutView from '/src/views/AboutView.vue'
+import BrandListView from '/src/views/BrandListView.vue'
+import LinksView from '/src/views/LinksView.vue'
 
 
 const routes = [
@@ -31,6 +29,21 @@ const routes = [
         name: "ComponentView",
         path: "/component/:id/",
         component: ComponentView
+    },
+    {
+        name: "AboutView",
+        path: "/About/",
+        component: AboutView
+    },
+    {
+        name: "BrandListView",
+        path: "/Brand/",
+        component: BrandListView
+    },    
+    {
+        name: "LinksView",
+        path: "/Links/",
+        component: LinksView
     },
 ];
 
