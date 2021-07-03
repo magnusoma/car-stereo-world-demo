@@ -7,12 +7,23 @@ import ComponentListView from '/src/views/component/ComponentListView.vue'
 import ComponentView from '/src/views/component/ComponentView.vue'
 
 import BrandListView from '/src/views/brand/BrandListView.vue'
+import BrandView from '/src/views/brand/BrandView.vue'
 
 import AboutView from '/src/views/AboutView.vue'
 import LinksView from '/src/views/LinksView.vue'
 
 
 const routes = [
+    {
+        name: "BrandListView",
+        path: "/Brand/",
+        component: BrandListView
+    },
+    {
+        name: "BrandView",
+        path: "/brand/:id/",
+        component: BrandView
+    },
     {
         name: "ComponentSeriesListView",
         path: "/component-series",
@@ -37,11 +48,6 @@ const routes = [
         name: "AboutView",
         path: "/About/",
         component: AboutView
-    },
-    {
-        name: "BrandListView",
-        path: "/Brand/",
-        component: BrandListView
     },    
     {
         name: "LinksView",
