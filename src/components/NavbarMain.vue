@@ -6,6 +6,7 @@
             <li><router-link to="/component">Komponenter</router-link></li>
             <li><router-link to="/about">Om oss</router-link></li>
             <li><router-link to="/links">Lenker</router-link></li>
+            <li><router-link to="/admin">Admin</router-link></li>
         </ul>
     </nav>
 </template>

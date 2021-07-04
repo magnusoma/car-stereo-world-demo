@@ -12,6 +12,8 @@ import BrandView from '/src/views/brand/BrandView.vue'
 import AboutView from '/src/views/AboutView.vue'
 import LinksView from '/src/views/LinksView.vue'
 
+import AdminView from '/src/views/admin/AdminView.vue'
+
 
 const routes = [
     {
@@ -53,6 +55,11 @@ const routes = [
         name: "LinksView",
         path: "/Links/",
         component: LinksView
+    },    
+    {
+        name: "AdminView",
+        path: "/admin/",
+        component: AdminView
     },
 ];
 
