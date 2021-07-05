@@ -17,7 +17,7 @@
             @click="renderBrandList"
         >
             <option
-                v-for="brand in BrandList"
+                v-for="brand in brandList"
                 :key="brand.id"
                 :value="brand.id"    
             >{{ brand.name }}</option>
@@ -41,11 +41,11 @@ export default {
             brandId: 0
         });
 
-        let BrandList = ref();
+        let brandList = ref();
 
         return {
             ComponentSeries,
-            BrandList
+            brandList
         }
     },
     methods: {
@@ -64,7 +64,7 @@ export default {
         renderBrandList(){
             axios.get("https://localhost:44353/api/brand/get-brand-list")
                 .then( response => {
-                    this.BrandList = response.data;
+                    this.brandList = response.data;
                 })
         }
     },
